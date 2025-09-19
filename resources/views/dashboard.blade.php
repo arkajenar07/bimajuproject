@@ -6,16 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div class="flex w-full">
         @include('components.sidebar')
-        <div class="p-6 space-y-6 flex-grow">
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="space-y-6 flex-grow">
+            <div class="mb-2 border-b border-gray-200 p-6 flex justify-between items-center">
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-semibold text-3xl">Welcome back, Sari!</h1>
+                    <p>Ready to grow your F&B business today?</p>
+                </div>
+                <div class="profile-wrapper">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img src="{{ asset('assets/images/flower.jpg') }}" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
                 {{-- Learning Progress --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Learning Progress</h3>
                         <p class="text-sm text-gray-500">Your journey to success</p>
@@ -35,7 +47,7 @@
                 </div>
 
                 {{-- Finance Summary --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Finance Summary</h3>
                         <p class="text-sm text-gray-500">This month's overview</p>
@@ -63,7 +75,7 @@
                 </div>
 
                 {{-- Recipe Collection --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Recipe Collection</h3>
                         <p class="text-sm text-gray-500">Your culinary arsenal</p>
@@ -83,7 +95,7 @@
                 </div>
 
                 {{-- Consultation --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Consultation</h3>
                         <p class="text-sm text-gray-500">Expert support status</p>
@@ -104,7 +116,7 @@
                 </div>
 
                 {{-- Community --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Community</h3>
                         <p class="text-sm text-gray-500">Latest discussions</p>
@@ -127,16 +139,16 @@
                 </div>
 
                 {{-- Quick Actions (sementara placeholder) --}}
-                <div class="bg-white p-4 rounded-2xl shadow">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200">
                     <h3 class="text-lg font-semibold">Quick Actions</h3>
                     <p class="text-sm text-gray-500">Some action buttons here...</p>
                 </div>
             </div>
 
             {{-- Recent Activity Section --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6  ">
                 {{-- Recent Transactions --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-3">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Recent Transactions</h3>
                         <p class="text-sm text-gray-500">Your latest financial activities</p>
@@ -166,7 +178,7 @@
                 </div>
 
                 {{-- Learning Recommendations --}}
-                <div class="bg-white p-4 rounded-2xl shadow space-y-3">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 space-y-3">
                     <div class="flex items-center justify-between">
                         <h3 class="text-lg font-semibold">Learning Recommendations</h3>
                         <p class="text-sm text-gray-500">Suggested modules for you</p>
@@ -193,6 +205,7 @@
                     @endforeach
                     <button class="w-full py-2 border rounded-lg text-sm mt-3">Explore All Courses</button>
                 </div>
+            </div>
             </div>
         </div>
     </div>

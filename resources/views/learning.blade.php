@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div class="flex">
         @include('components.sidebar')
-        <div class="p-6 space-y-6 w-full">
+        <div class="space-y-6 w-full">
+            <div class="mb-2 border-b border-gray-200 p-6 flex justify-between items-center">
+                <div class="flex flex-col gap-2">
+                    <h1 class="font-semibold text-3xl">Welcome back, Sari!</h1>
+                    <p>Ready to grow your F&B business today?</p>
+                </div>
+                <div class="profile-wrapper">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img src="{{ asset('assets/images/flower.jpg') }}" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
             {{-- Header --}}
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between p-6">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-900">Learning Modules</h1>
                     <p class="text-gray-500 mt-2">Grow your F&B business with expert knowledge</p>
@@ -25,7 +36,7 @@
             </div>
 
             {{-- Grid Modules --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-6">
 
                 {{-- Module 1 --}}
                 <div class="border rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white">

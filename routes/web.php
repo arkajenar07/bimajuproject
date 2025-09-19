@@ -19,6 +19,18 @@ Route::get('/consultation', function () {
     return view('consultation');
 });
 
+Route::get('/hpp-calculator', function () {
+    return view('hpp');
+});
+
+Route::get('/profiles', function () {
+    return view('profiles');
+});
+
+Route::get('/community', function () {
+    return view('community');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
