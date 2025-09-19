@@ -120,10 +120,10 @@
                         @endforeach
 
                         {{-- Form Komentar --}}
-                        <form method="POST" action="#" class="space-y-3">
+                        <form id="commentForm" class="space-y-3">
                             @csrf
-                            <textarea name="comment" rows="3" class="w-full border rounded-lg p-3" placeholder="Tulis komentar..."></textarea>
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                            <textarea id="commentInput" rows="3" class="w-full border rounded-lg p-3" placeholder="Tulis komentar..."></textarea>
+                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded" style="background-color: #12B6D3">
                                 Kirim Komentar
                             </button>
                         </form>
@@ -198,5 +198,43 @@
     @endif
 </div>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("commentForm");
+        const input = document.getElementById("commentInput");
+        const commentsContainer = form.parentElement; // parent .p-6
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const text = input.value.trim();
+            if (!text) return;
+
+            // buat elemen komentar baru
+            const commentEl = document.createElement("div");
+            commentEl.innerHTML = `
+                <div class="flex items-start gap-3">
+                    <div class="h-8 w-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold">
+                        Y
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <span class="font-medium">You</span>
+                            <span class="text-gray-500">baru saja</span>
+                        </div>
+                        <p class="text-sm text-gray-800 mt-1">${text}</p>
+                    </div>
+                </div>
+                <hr class="my-3">
+            `;
+
+            // sisipkan sebelum form
+            commentsContainer.insertBefore(commentEl, form);
+
+            // reset textarea
+            input.value = "";
+        });
+    });
+</script>
+
 </body>
 </html>
