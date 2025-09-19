@@ -31,6 +31,9 @@ Route::get('/community', function () {
     return view('community');
 });
 
+Route::get('/learning/detail', function () {
+    return view('detail-learning');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

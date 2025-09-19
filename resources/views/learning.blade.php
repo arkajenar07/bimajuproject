@@ -58,7 +58,7 @@
                             <span class="flex items-center gap-1 text-gray-500">⏱ 2 hours</span>
                             <span class="text-green-600 font-medium">Completed</span>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
                             ✅ Review
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                             </div>
                             <p class="text-xs text-gray-500 mt-1">60% complete</p>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center bg-[#12B6D3] text-white rounded-lg py-1.5 text-sm">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center bg-[#12B6D3] text-white rounded-lg py-1.5 text-sm">
                             ▶ Continue
                         </a>
                     </div>
@@ -116,7 +116,7 @@
                             <span class="flex items-center gap-1 text-gray-500">⏱ 2.5 hours</span>
                             <span class="text-gray-400 font-medium">Not Started</span>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
                             📖 Start
                         </a>
                     </div>
@@ -148,7 +148,7 @@
                             </div>
                             <p class="text-xs text-gray-500 mt-1">30% complete</p>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center bg-[#12B6D3] text-white rounded-lg py-1.5 text-sm">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center bg-[#12B6D3] text-white rounded-lg py-1.5 text-sm">
                             ▶ Continue
                         </a>
                     </div>
@@ -174,7 +174,7 @@
                             <span class="flex items-center gap-1 text-gray-500">⏱ 4 hours</span>
                             <span class="text-gray-400 font-medium">Not Started</span>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
                             📖 Start
                         </a>
                     </div>
@@ -200,7 +200,7 @@
                             <span class="flex items-center gap-1 text-gray-500">⏱ 3 hours</span>
                             <span class="text-gray-400 font-medium">Not Started</span>
                         </div>
-                        <a href="#" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
+                        <a href="/learning/detail" class="w-full inline-flex items-center justify-center border rounded-lg py-1.5 text-sm hover:bg-gray-50">
                             📖 Start
                         </a>
                     </div>
