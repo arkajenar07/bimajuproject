@@ -11,11 +11,11 @@
 <body>
     <div class="flex w-full">
         @include('components.sidebar')
-        <div class="space-y-6 flex-grow">
+        <div class="flex-grow">
             <div class="mb-2 border-b border-gray-200 p-6 flex justify-between items-center">
-                <div class="flex flex-col gap-2">
-                    <h1 class="font-semibold text-3xl">Welcome back, Sari!</h1>
-                    <p>Ready to grow your F&B business today?</p>
+                <div class="flex flex-col">
+                    <h1 class="font-bold text-2xl">Welcome back, Sari!</h1>
+                    <p class="text-gray-500">Ready to grow your F&B business today?</p>
                 </div>
                 <div class="profile-wrapper">
                     <div class="w-12 h-12 rounded-full overflow-hidden">
@@ -139,9 +139,27 @@
                 </div>
 
                 {{-- Quick Actions (sementara placeholder) --}}
-                <div class="bg-white p-4 rounded-2xl border border-gray-200">
+                <div class="bg-white p-4 rounded-2xl border border-gray-200 flex flex-col">
                     <h3 class="text-lg font-semibold">Quick Actions</h3>
                     <p class="text-sm text-gray-500">Some action buttons here...</p>
+                    <div class="grid grid-cols-2 gap-4 flex-grow">
+                        <div class="border rounded-lg p-2">
+                            <h3>Add Transactions</h3>
+                            <p>Record income or expense</p>
+                        </div>
+                        <div class="border rounded-lg p-2">
+                            <h3>Add Transactions</h3>
+                            <p>Record income or expense</p>
+                        </div>
+                        <div class="border rounded-lg p-2">
+                            <h3>Add Transactions</h3>
+                            <p>Record income or expense</p>
+                        </div>
+                        <div class="border rounded-lg p-2">
+                            <h3>Add Transactions</h3>
+                            <p>Record income or expense</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -25,25 +25,140 @@
             </div>
             @php
     $moduleData = [
-        "id" => 1,
-        "title" => "Basic Finance Management",
-        "totalLessons" => 12,
-        "completedLessons" => 4,
-        "lessons" => [
-            ["id"=>1,"title"=>"Introduction to F&B Finance","duration"=>"8 min","status"=>"Completed","type"=>"video"],
-            ["id"=>2,"title"=>"Understanding Cash Flow","duration"=>"12 min","status"=>"Completed","type"=>"text"],
-            ["id"=>3,"title"=>"Basic Accounting Principles","duration"=>"15 min","status"=>"Completed","type"=>"video","updated"=>true],
-            ["id"=>4,"title"=>"Revenue vs Profit","duration"=>"10 min","status"=>"Completed","type"=>"text"],
-            ["id"=>5,"title"=>"Creating Your First Budget","duration"=>"18 min","status"=>"In Progress","type"=>"video"],
-            ["id"=>6,"title"=>"Tracking Daily Expenses","duration"=>"7 min","status"=>"Not Started","type"=>"text"],
-            ["id"=>7,"title"=>"Managing Inventory Costs","duration"=>"14 min","status"=>"Not Started","type"=>"video"],
-            ["id"=>8,"title"=>"Setting Financial Goals","duration"=>"9 min","status"=>"Not Started","type"=>"text"],
-            ["id"=>9,"title"=>"Emergency Fund Planning","duration"=>"11 min","status"=>"Not Started","type"=>"video"],
-            ["id"=>10,"title"=>"Tax Basics for F&B","duration"=>"13 min","status"=>"Not Started","type"=>"text"],
-            ["id"=>11,"title"=>"Financial Reporting","duration"=>"16 min","status"=>"Not Started","type"=>"video"],
-            ["id"=>12,"title"=>"Growth Investment Planning","duration"=>"20 min","status"=>"Not Started","type"=>"text"],
+    "id" => 1,
+    "title" => "Basic Finance Management",
+    "totalLessons" => 12,
+    "completedLessons" => 4,
+    "lessons" => [
+        [
+            "id" => 1,
+            "title" => "Introduction to F&B Finance",
+            "duration" => "8 min",
+            "estimatedTime" => "5-10 min",
+            "content" => [
+                "type" => "video",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Get an overview of financial management in the Food & Beverage industry. Learn why finance is crucial for sustainable business operations."
+            ],
+            "keyTakeaways" => [
+                "Understand the importance of finance in F&B",
+                "Identify key financial terms",
+                "Recognize how finance impacts business decisions"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Finance Basics PDF","type"=>"PDF"],
+                ["id"=>2,"title"=>"Intro Video Notes","type"=>"Doc"]
+            ],
+            "status" => "Completed"
+        ],
+        [
+            "id" => 2,
+            "title" => "Understanding Cash Flow",
+            "duration" => "12 min",
+            "estimatedTime" => "10-15 min",
+            "content" => [
+                "type" => "text",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Learn how cash flows in and out of your F&B business and why it is more important than just profit numbers."
+            ],
+            "keyTakeaways" => [
+                "Differentiate between cash inflows and outflows",
+                "Understand operating vs investing cash flows",
+                "Learn to maintain positive cash flow"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Cash Flow Template","type"=>"Excel"]
+            ],
+            "status" => "Completed"
+        ],
+        [
+            "id" => 3,
+            "title" => "Basic Accounting Principles",
+            "duration" => "15 min",
+            "estimatedTime" => "15-20 min",
+            "content" => [
+                "type" => "video",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Learn the fundamental accounting principles every F&B entrepreneur should know to keep financial records accurate."
+            ],
+            "keyTakeaways" => [
+                "Understand assets, liabilities, and equity",
+                "Learn about debits and credits",
+                "Recognize the importance of balance sheets"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Accounting Basics Sheet","type"=>"PDF"]
+            ],
+            "status" => "Completed",
+            "updated" => true
+        ],
+        [
+            "id" => 4,
+            "title" => "Revenue vs Profit",
+            "duration" => "10 min",
+            "estimatedTime" => "10-15 min",
+            "content" => [
+                "type" => "text",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Understand the difference between revenue and profit, and why both metrics matter in evaluating business success."
+            ],
+            "keyTakeaways" => [
+                "Define revenue and profit",
+                "Differentiate gross vs net profit",
+                "Identify common profit margin mistakes"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Revenue vs Profit Guide","type"=>"Doc"]
+            ],
+            "status" => "Completed"
+        ],
+        [
+            "id" => 5,
+            "title" => "Creating Your First Budget",
+            "duration" => "18 min",
+            "estimatedTime" => "15-20 min",
+            "content" => [
+                "type" => "video",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Learn how to create an effective budget for your F&B business. We'll cover revenue forecasting, expense categorization, and setting realistic financial targets that will help you make informed business decisions."
+            ],
+            "keyTakeaways" => [
+                "Understand the difference between fixed and variable costs in your F&B business",
+                "Learn to forecast monthly revenue based on historical data and market trends",
+                "Create expense categories that match your business operations",
+                "Set realistic profit margins and growth targets",
+                "Build contingency planning into your budget for unexpected expenses"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Budget Template for F&B","type"=>"Excel"],
+                ["id"=>2,"title"=>"Cost Calculation Worksheet","type"=>"PDF"],
+                ["id"=>3,"title"=>"Monthly Tracking Sheet","type"=>"Google Sheets"],
+            ],
+            "status" => "In Progress"
+        ],
+        [
+            "id" => 6,
+            "title" => "Tracking Daily Expenses",
+            "duration" => "7 min",
+            "estimatedTime" => "5-10 min",
+            "content" => [
+                "type" => "text",
+                "thumbnail" => "/api/placeholder/640/360",
+                "description" => "Learn simple methods for tracking and managing your daily expenses to maintain healthy cash flow."
+            ],
+            "keyTakeaways" => [
+                "Record daily business expenses consistently",
+                "Categorize expenses properly",
+                "Identify patterns of overspending"
+            ],
+            "resources" => [
+                ["id"=>1,"title"=>"Daily Expense Tracker","type"=>"Excel"]
+            ],
+            "status" => "Not Started"
         ]
-    ];
+    ]
+];
+
 
     $currentLesson = [
         "id" => 5,
@@ -127,7 +242,7 @@
             <div class="bg-white shadow rounded-lg p-6">
                 <h2 class="text-xl font-bold mb-3" x-text="currentLesson.title"></h2>
                 <template x-if="currentLesson.content?.thumbnail">
-                    <img :src="currentLesson.content.thumbnail" class="rounded mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ouvbeb2wSGA?si=0zqHBaIHfdNt9i_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full"></iframe>
                 </template>
                 <p class="text-gray-700 leading-relaxed" x-text="currentLesson.content?.description"></p>
             </div>
@@ -162,6 +277,104 @@
                     </template>
                 </ul>
             </div>
+
+            <!-- Notes -->
+    <div class="bg-white p-4 rounded-lg shadow">
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-gray-800 flex items-center gap-2">
+                <span class="material-icons text-gray-500 text-lg">note</span>
+                Notes
+            </h3>
+            <div class="flex gap-2 text-gray-500">
+                <button><i class="material-icons text-sm">content_copy</i></button>
+                <button><i class="material-icons text-sm">file_download</i></button>
+                <button><i class="material-icons text-sm">print</i></button>
+            </div>
+        </div>
+        <textarea class="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
+                  rows="4"></textarea>
+    </div>
+
+    <!-- Action Checklist -->
+    <div class="bg-white p-4 rounded-lg shadow">
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-gray-800">Action Checklist</h3>
+            <button class="text-blue-500 text-xl leading-none">+</button>
+        </div>
+        <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2">
+                <input type="checkbox" checked class="mt-1 text-blue-500">
+                <span>List all your fixed monthly expenses <br><span class="text-gray-500 text-xs">(rent, utilities, salaries)</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+                <input type="checkbox" checked class="mt-1 text-blue-500">
+                <span>Calculate average variable costs per month <br><span class="text-gray-500 text-xs">(ingredients, supplies)</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+                <input type="checkbox" checked class="mt-1 text-blue-500">
+                <span>Review last 3 months of sales to forecast revenue</span>
+            </li>
+            <li class="flex items-start gap-2">
+                <input type="checkbox" checked class="mt-1 text-blue-500">
+                <span>Set aside 10-15% for emergency expenses</span>
+            </li>
+            <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 text-blue-500">
+                <span>Create a simple tracking system (spreadsheet or app)</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Related Resources -->
+    <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-gray-800 mb-3">Related Resources</h3>
+        <ul class="space-y-3 text-sm text-blue-600">
+            <li class="flex justify-between items-center">
+                <div>
+                    <span class="font-medium">Budget Template for F&B</span>
+                    <p class="text-xs text-gray-500">Excel</p>
+                </div>
+                <button><i class="material-icons text-gray-500 text-lg">download</i></button>
+            </li>
+            <li class="flex justify-between items-center">
+                <div>
+                    <span class="font-medium">Cost Calculation Worksheet</span>
+                    <p class="text-xs text-gray-500">PDF</p>
+                </div>
+                <button><i class="material-icons text-gray-500 text-lg">download</i></button>
+            </li>
+            <li class="flex justify-between items-center">
+                <div>
+                    <span class="font-medium">Monthly Tracking Sheet</span>
+                    <p class="text-xs text-gray-500">Google Sheets</p>
+                </div>
+                <button><i class="material-icons text-gray-500 text-lg">download</i></button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- F&B Glossary -->
+    <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-gray-800 mb-3">F&B Glossary</h3>
+        <input type="text" placeholder="Search terms..."
+               class="w-full border rounded-md px-3 py-2 text-sm mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+        <div class="space-y-4 text-sm">
+            <div>
+                <p class="font-medium text-gray-800">Food Cost Percentage</p>
+                <p class="text-gray-600">The percentage of revenue spent on food ingredients and raw materials.</p>
+                <span class="text-xs text-gray-500">Finance</span>
+            </div>
+            <div>
+                <p class="font-medium text-gray-800">Cash Flow</p>
+                <p class="text-gray-600">The movement of money in and out of your business over a specific period.</p>
+                <span class="text-xs text-gray-500">Finance</span>
+            </div>
+            <div>
+                <p class="font-medium text-gray-800">Gross Profit Margin</p>
+            </div>
+        </div>
+    </div>
 
             <div class="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4">
                 <h3 class="font-semibold text-blue-700 mb-2">🏆 Achievement Goal</h3>

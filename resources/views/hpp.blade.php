@@ -12,23 +12,23 @@
     <div class="flex">
         @include('components.sidebar')
         <div class="space-y-6 w-full">
-            <div class="mb-2 border-b border-gray-200 p-6 flex justify-between items-center">
-                <div class="flex flex-col gap-2">
-                    <h1 class="font-semibold text-3xl">Welcome back, Sari!</h1>
-                    <p>Ready to grow your F&B business today?</p>
-                </div>
-                <div class="profile-wrapper">
-                    <div class="w-12 h-12 rounded-full overflow-hidden">
-                        <img src="{{ asset('assets/images/flower.jpg') }}" alt="" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
+            <div class="border-b border-gray-200 p-6 flex justify-between items-center">
+        <div class="flex flex-col">
+          <h1 class="font-bold text-2xl">Welcome back, Sari!</h1>
+          <p class="text-gray-500">Ready to grow your F&B business today?</p>
+        </div>
+        <div class="profile-wrapper">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="{{ asset('assets/images/flower.jpg') }}" alt="" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
             {{-- Header --}}
             <div class="p-6 space-y-6 max-w-6xl mx-auto">
               <!-- Header -->
               <div class="text-center space-y-2">
                 <div class="flex items-center justify-center gap-2 mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#12B6D3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6M9 8h6m-6-4h6m2 0h-1a2 2 0 00-2-2H9a2 2 0 00-2 2H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"/>
                   </svg>
                   <h1 class="text-3xl font-bold text-gray-800">Kalkulator HPP</h1>
@@ -45,7 +45,7 @@
                   <div class="bg-white shadow rounded-xl p-4">
                     <div class="flex items-center justify-between mb-4">
                       <h2 class="font-semibold text-lg">Daftar Bahan Baku</h2>
-                      <button id="addIngredientBtn" class="px-3 py-1 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 flex items-center gap-1">
+                      <button id="addIngredientBtn" class="px-3 py-1 bg-[#12B6D3] text-white rounded-lg text-sm flex items-center gap-1">
                         + Tambah Bahan
                       </button>
                     </div>
@@ -60,12 +60,12 @@
                     <div>
                       <label for="portionCount" class="block text-sm font-medium text-gray-700">Jumlah Porsi</label>
                       <input id="portionCount" type="number" value="10"
-                        class="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        class="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-[#12B6D3] focus:border-[#12B6D3]">
                     </div>
                     <div>
                       <label for="margin" class="block text-sm font-medium text-gray-700">Margin Keuntungan (%)</label>
                       <input id="margin" type="number" value="30"
-                        class="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        class="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-[#12B6D3] focus:border-[#12B6D3]">
                     </div>
                   </div>
                 </div>
@@ -85,14 +85,14 @@
                     </div>
                     <div class="flex justify-between">
                       <span class="text-gray-800 font-semibold">Harga Jual Disarankan:</span>
-                      <span id="suggestedPrice" class="font-bold text-indigo-600">Rp 0</span>
+                      <span id="suggestedPrice" class="font-bold text-[#12B6D3]">Rp 0</span>
                     </div>
                   </div>
 
                   <!-- Actions -->
                   <div class="bg-white shadow rounded-xl p-4 space-y-3">
                     <button id="calculateBtn"
-                      class="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                      class="w-full px-4 py-2 bg-[#12B6D3] text-white rounded-lg hover:bg-indigo-700">
                       Hitung HPP
                     </button>
                     <div class="grid grid-cols-2 gap-2">
@@ -100,6 +100,22 @@
                         class="px-3 py-2 border rounded-lg text-sm hover:bg-gray-50 disabled:opacity-50">Export PDF</button>
                       <button id="exportCsv" disabled
                         class="px-3 py-2 border rounded-lg text-sm hover:bg-gray-50 disabled:opacity-50">Export CSV</button>
+                    </div>
+                  </div>
+                  <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 space-y-2 text-sm">
+                    <h3 class="font-semibold text-cyan-700">💡 Tips Pricing</h3>
+                    <p><span class="font-medium">Markup umum F&amp;B:</span> <span class="font-bold">30-50%</span></p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                      <li>Makanan ringan: 30-40%</li>
+                      <li>Makanan berat: 40-50%</li>
+                      <li>Minuman: 50-70%</li>
+                      <li>Premium products: 70%+</li>
+                    </ul>
+                    <div class="bg-white border border-yellow-200 rounded-lg p-2 text-xs text-yellow-600 flex items-start gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"/>
+                      </svg>
+                      Sesuaikan margin dengan target pasar dan lokasi bisnis Anda
                     </div>
                   </div>
                 </div>
