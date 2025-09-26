@@ -42,7 +42,9 @@
                             <div class="bg-[#12B6D3] h-2" style="width:60%"></div>
                         </div>
                         <p class="text-sm text-gray-500">8 modules remaining to complete</p>
-                        <button class="w-full py-2 text-white bg-[#12B6D3] rounded-lg text-sm">Continue Learning</button>
+                        <button class="w-full py-2 text-white bg-[#12B6D3] rounded-lg text-sm">
+                            <a href="/learning">Continue Learning</a>
+                        </button>
                     </div>
                 </div>
 
@@ -88,7 +90,9 @@
                         </div>
                         <p class="text-sm text-gray-500">Recipes purchased this month</p>
                         <div class="flex gap-2">
-                            <button class="flex-1 py-2 border rounded-lg text-sm">View All</button>
+                            <button class="flex-1 py-2 border rounded-lg text-sm">
+                                <a href="/recipe">View All</a>
+                            </button>
                             <button class="flex-1 py-2 text-white bg-[#12B6D3] rounded-lg text-sm">Buy More</button>
                         </div>
                     </div>
@@ -111,7 +115,7 @@
                         </div>
                     </div>
                     <button class="w-full py-2 text-white bg-[#12B6D3] rounded-lg text-sm flex items-center justify-center gap-2">
-                        💬 Ask Expert
+                        <a href="/consultation">Ask Expert</a>
                     </button>
                 </div>
 
@@ -135,7 +139,9 @@
                             <p class="text-gray-500">12 new replies</p>
                         </div>
                     </div>
-                    <button class="w-full py-2 border rounded-lg text-sm">Join Discussions</button>
+                    <button class="w-full py-2 border rounded-lg text-sm">
+                        <a href="/community">Join Discussions</a>
+                    </button>
                 </div>
 
                 {{-- Quick Actions (sementara placeholder) --}}
@@ -192,7 +198,9 @@
                         </span>
                     </div>
                     @endforeach
-                    <button class="w-full py-2 border rounded-lg text-sm mt-3">View All Transactions</button>
+                    <button class="w-full py-2 border rounded-lg text-sm mt-3">
+                        <a href="/finance">View All Transactions</a>
+                    </button>
                 </div>
 
                 {{-- Learning Recommendations --}}
@@ -221,7 +229,9 @@
                         @endif
                     </div>
                     @endforeach
-                    <button class="w-full py-2 border rounded-lg text-sm mt-3">Explore All Courses</button>
+                    <button class="w-full py-2 border rounded-lg text-sm mt-3">
+                        <a href="/learning">Explore All Courses</a>
+                    </button>
                 </div>
             </div>
             </div>
