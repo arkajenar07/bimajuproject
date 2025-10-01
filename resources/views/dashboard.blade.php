@@ -90,10 +90,9 @@
                         </div>
                         <p class="text-sm text-gray-500">Recipes purchased this month</p>
                         <div class="flex gap-2">
-                            <button class="flex-1 py-2 border rounded-lg text-sm">
-                                <a href="/recipe">View All</a>
+                            <button class="flex-1 py-2 text-white bg-[#12B6D3] rounded-lg text-sm">
+                                <a href="/recipe">Buy More</a>
                             </button>
-                            <button class="flex-1 py-2 text-white bg-[#12B6D3] rounded-lg text-sm">Buy More</button>
                         </div>
                     </div>
                 </div>
@@ -146,27 +145,42 @@
 
                 {{-- Quick Actions (sementara placeholder) --}}
                 <div class="bg-white p-4 rounded-2xl border border-gray-200 flex flex-col">
-                    <h3 class="text-lg font-semibold">Quick Actions</h3>
-                    <p class="text-sm text-gray-500">Some action buttons here...</p>
-                    <div class="grid grid-cols-2 gap-4 flex-grow">
-                        <div class="border rounded-lg p-2">
-                            <h3>Add Transactions</h3>
-                            <p>Record income or expense</p>
-                        </div>
-                        <div class="border rounded-lg p-2">
-                            <h3>Add Transactions</h3>
-                            <p>Record income or expense</p>
-                        </div>
-                        <div class="border rounded-lg p-2">
-                            <h3>Add Transactions</h3>
-                            <p>Record income or expense</p>
-                        </div>
-                        <div class="border rounded-lg p-2">
-                            <h3>Add Transactions</h3>
-                            <p>Record income or expense</p>
-                        </div>
-                    </div>
-                </div>
+  <!-- Header -->
+  <h3 class="text-lg font-semibold">Quick Actions</h3>
+  <p class="text-sm text-gray-500">Common tasks to boost your business</p>
+
+  <!-- Action buttons -->
+  <div class="grid grid-cols-2 gap-4 mt-4">
+    <!-- Add Transaction -->
+    <div class="border rounded-lg p-4 flex flex-col items-center justify-center text-center bg-cyan-500 text-white cursor-pointer hover:bg-cyan-600 transition">
+      <span class="text-2xl">+</span>
+      <h4 class="font-semibold">Add Transaction</h4>
+      <p class="text-sm opacity-90">Record income or expense</p>
+    </div>
+
+    <!-- Ask Advisor -->
+    <div class="border rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-gray-100 transition">
+      <span class="text-xl">💬</span>
+      <h4 class="font-semibold">Ask Advisor</h4>
+      <p class="text-sm text-gray-500">Get business advice</p>
+    </div>
+
+    <!-- Buy Recipe -->
+    <div class="border rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-gray-100 transition">
+      <span class="text-xl">🛒</span>
+      <h4 class="font-semibold">Buy Recipe</h4>
+      <p class="text-sm text-gray-500">Discover new recipes</p>
+    </div>
+
+    <!-- Join Discussion -->
+    <div class="border rounded-lg p-4 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-gray-100 transition">
+      <span class="text-xl">👥</span>
+      <h4 class="font-semibold">Join Discussion</h4>
+      <p class="text-sm text-gray-500">Connect with community</p>
+    </div>
+  </div>
+</div>
+
             </div>
 
             {{-- Recent Activity Section --}}

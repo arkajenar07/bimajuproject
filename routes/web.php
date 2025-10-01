@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('login');
+    return view('welcome');
 });
 
 Route::get('/learning', function () {
@@ -17,6 +17,10 @@ Route::get('/finance', function () {
 
 Route::get('/consultation', function () {
     return view('consultation');
+})->middleware(['auth', 'verified']);
+
+Route::get('/consultation/detail/{id}', function ($id) {
+    return view('consultation-detail', ['id' => $id]);
 })->middleware(['auth', 'verified']);
 
 Route::get('/hpp-calculator', function () {
